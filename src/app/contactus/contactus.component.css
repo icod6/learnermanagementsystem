@@ -1,0 +1,66 @@
+/* Container Styling */
+.visual-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #6cb0f3, #aca5a6);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Heading Styling */
+  .visual-container h2 {
+    text-align: center;
+    color: rgb(13, 10, 10);
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph Styling */
+  .visual-container p {
+    color: #020202;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  /* Button Styling */
+  .visual-container .visual-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Button Hover Effect */
+  .visual-container .visual-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #0056b3, #007bff);
+  }
+  
+  /* Subtle Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .visual-container {
+    animation: fadeIn 1s ease-in-out;
+  }
+  

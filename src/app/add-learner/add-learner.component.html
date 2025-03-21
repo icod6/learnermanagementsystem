@@ -1,0 +1,54 @@
+<div >
+    <h1>Add Learner</h1>
+    <div class="main-learner">
+      <div class="user-form">
+        <div *ngIf="errorMessage && errorMessage !== ''" class="error" id="errordiv">
+          {{errorMessage}}
+        </div>
+        
+        <div class="form-row">
+          <div class="form-item">
+            <label for="amount">Learner Name:</label>
+            <input type="text" [(ngModel)]="lName" required >
+          </div>
+        </div>
+        <div class="form-row">
+            <div class="form-item">
+              <label for="amount">Email:</label>
+              <input type="email" [(ngModel)]="learnerEmailId" required >
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-item" style="width: 306px;">
+              <label for="amount">PhoneNumber:</label>
+              <input type="text" [(ngModel)]="lphoneNumber" required >
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-item" style="width: 306px;">
+              <label for="amount">Degree:</label>
+              <input type="text" [(ngModel)]="lDegree" required >
+            </div>
+          </div>
+           <div class="form-row">
+            <div class="form-item" style="width: 306px;">
+              <label for="amount">learner Profile Pic:</label>
+              <input type="text" [(ngModel)]="lpic" required >
+            </div>
+          </div> 
+          <div class="form-item">
+            <label for="amount">Password:</label>
+            <input type="password" [(ngModel)]="learnerPassword" required >
+          </div>
+        <div class="button-container">
+          <button type="submit" class="submit-button" (click)="addLearner()"> {{isEdit ? 'Update' : 'Add'}} </button>
+        </div>
+      </div>
+
+
+
+    </div>
+      
+    </div>
+
+

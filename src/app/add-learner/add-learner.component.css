@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+    background-image: radial-gradient(circle 759px at -6.7% 50%, rgba(80, 131, 73, 1) 0%, rgba(140, 209, 131, 1) 26.2%, rgba(178, 231, 170, 1) 50.6%, rgba(144, 213, 135, 1) 74.1%, rgba(75, 118, 69, 1) 100.3%);
+    padding: 15px;
+}
+
+
+.error {
+    color: red;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+label {
+    color: #B4886B;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+input {
+    padding: 3px;
+    box-shadow: 3px 3px 5px grey;
+    font-size: 14px;
+    font-weight: 600;
+    width: 300px;
+    margin-bottom: 10px;
+
+
+}
+
+
+.main-learner {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+button{
+    background-color: #04AA6D; /* Green */
+  border: 2px solid black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

@@ -1,0 +1,37 @@
+<div class="main-content">
+    <div class="left-panel">
+   <div class="search-bar">
+        <input type="text" [(ngModel)]="searchText" (input)="onSearchInput($event)" placeholder="Search learner">
+      </div> 
+      <!-- Display list of all users in a table -->
+      <table *ngIf="learner.length > 0" border="1">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Pic</th>
+            <th>Name</th>
+            
+            <th>Email</th>
+            <th>PhoneNo</th>
+            <th>Degree</th>
+            
+            <th [hidden]="!isAdmin">Operation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let l of learner">
+            <td>{{ l.lid }}</td>
+            <td><img [src]="l.lpic" alt=""></td>
+            <td>{{ l.lName}}</td>
+            <td>{{l.learnerEmailId}}</td>
+            <td>{{l.lphoneNumber}}</td>
+            <td>{{l.lDegree}}</td>
+            <td [hidden]="!isAdmin"><button (click)="deleteLearner(l.lid)"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp;Delete</button>&nbsp;&nbsp;<button (click)="updateLearner(l.lid)"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Update</button></td>        </tr>
+        </tbody>
+      </table>
+      <div *ngIf="learner.length === 0">There is no any learner currently</div>
+    </div>
+    
+
+
+
